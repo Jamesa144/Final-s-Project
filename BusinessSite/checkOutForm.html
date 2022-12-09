@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Check Out</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id="wrap">
+    <!--menu bar-->
+    <forum action="details_entry.php" method="POST">
+        <div class="topNav">
+            <a href=index.html>Home</a>
+            <a href="cases.html">Cases</a>
+            <a href="harddrive.html" >HDD/SDD</a> 
+            <a href="ram.html">Ram</a> 
+            <a href="motherboard.html">Motherboard</a>
+            <a href="about.html">About</a>
+            <a class="active" href="checkOutForum.html">Check Out</a>
+        </div>
+
+    <!--information box -->
+        <div class="checkout">
+            <div  id="grid-container">
+            
+                <div>
+                    <label>First Name:</label>
+                    <label><input type="text" name="firstName"></label>
+                </div>
+
+                <div>
+                    <label>Last Name:</label>
+                    <label><input  type="text" name="lastName"></label>
+                </div>
+
+                <div>
+                    <label>Address:</label>
+                    <label><input  type="text" name="address"></label>
+                </div>
+
+                <div>
+                    <label>Apartment,suite(optional):</label>
+                    <label><input  type="text" name="apartment"></label>
+                </div>
+
+                <div>
+                    <label>City:</label>
+                    <label><input  type="text" name="city"></label>
+                </div>
+
+                <div>
+                    <label>State:</label>
+                    <label>  <select id="states" name="state">
+                        <option value="blank"></option>
+                        <option value="Al">Alabama</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="CA">Californa</option>
+                        <option value="TX">Texas</option>
+                        <option value="WI">Wisconsin</option>
+                    </select></label>
+                </div>
+
+                <div>
+                    <label>Zip Code:</label>
+                    <label><input  type="text" name="zipcode"></label>
+                </div>
+
+                <div>
+                    <label>Phone Number:</label>
+                    <label><input  type="text" name="phone #"></label>
+                </div>
+
+                <div></div>
+                <div></div>
+
+                <div>
+                    <input type="submit" name="save" value="Check out" id="checkB"> </div>
+             </div>
+        </div>
+    </forum>
+    </div>
+</body>
+
+</html>

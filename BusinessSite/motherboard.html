@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Motherboard</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div id="wrap">
+      <div class="topNav">
+        <a href=index.html>Home</a>
+        <a href="cases.html">Cases</a>
+        <a href="harddrive.html" >HDD/SDD</a> 
+        <a href="ram.html">Ram</a> 
+        <a class="active" href="motherboard.html">Motherboard</a>
+        <a href="about.html">About</a>
+        <a href="checkOutForm.html">Check Out</a>
+      </div>
+    
+      <div id="grid-container">
+
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div>
+        <img src="image/motherboard1.jpg" alt="Motherboard_1">
+            <select id="M1">
+                <option value="0"></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <p id="priceM1">$80.00</p>
+            <button onclick="mbCart(); addTotalMb(mbCart(),mbCart2(),mbCart3(),mbCart4(),mbCart5())">Add to cart</button>
+        </div>
+
+        <div>
+        <img src="image/motherboard2.jpg" alt="Motherboard_2">
+            <select id="M2">
+                <option value="0"></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <p id="priceM2">$120.00</p>
+            <button onclick="mbCart2(); addTotalMb(mbCart(),mbCart2(),mbCart3(),mbCart4(),mbCart5())">Add to cart</button>
+        </div>
+
+        <div>
+        <img src="image/motherboard3.jpg" alt="Motherboard_3">
+            <select id="M3">
+                <option value="0"></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <p id="priceM3">$220.00</p>
+            <button onclick="mbCart3(); addTotalMb(mbCart(),mbCart2(),mbCart3(),mbCart4(),mbCart5())">Add to cart</button>
+        </div>
+
+        <div>
+        <img src="image/motherboard4.jpg" alt="Motherboard_4">
+            <select id="M4">
+                <option value="0"></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <p id="priceM4">$20.00</p>
+            <button onclick="mbCart4(); addTotalMb(mbCart(),mbCart2(),mbCart3(),mbCart4(),mbCart5())">Add to cart</button>
+        </div>
+
+        <div>
+        <img src="image/motherboard5.jpg" alt="Motherboard_5">
+            <select id="M5">
+                <option value="0"></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <p id="priceM5">$12.00</p>
+            <button onclick="mbCart5(); addTotalMb(mbCart(),mbCart2(),mbCart3(),mbCart4(),mbCart5())">Add to cart</button>
+        </div>
+      </div>
+      <div id="cart">
+        <p id="caseCart">Case:</p><br>
+        <p id="hddCart">HDD:</p><br>
+        <p id="ramCart">Ram:</p><br>
+        <p id="mbCart">Motherboard:</p><br>
+        <p id="totalCart">Total:</p>
+    </div>
+</div>
+</body>
+
+</html>

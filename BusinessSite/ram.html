@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Ram</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+  <div id="wrap">
+  <div class="topNav">
+    <a href=index.html>Home</a>
+    <a href="cases.html">Cases</a>
+    <a href="harddrive.html" >HDD/SDD</a> 
+    <a class="active" href="ram.html">Ram</a> 
+    <a href="motherboard.html">Motherboard</a>
+    <a href="about.html">About</a>
+    <a href="checkOutForm.html">Check Out</a>
+  </div>
+
+  <div id="grid-container">
+
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <div>
+    <img src="image/ram1.jpg" alt="Ram_1">
+      <select id="R1">
+        <option value="0"></option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <p id="priceR1">$20.00</p>
+    <button onclick="ramCart(); addTotalRam(ramCart(),ramCart2(),ramCart3(),ramCart4(),ramCart5())">Add to cart</button>
+  </div>
+
+    <div>
+    <img src="image/ram2.jpg" alt="Ram_2">
+      <select id="R2">
+        <option value="0"></option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <p id="priceR2">$55.00</p>
+    <button onclick="ramCart2(); addTotalRam(ramCart(),ramCart2(),ramCart3(),ramCart4(),ramCart5())">Add to cart</button>
+  </div>
+
+  <div>
+    <img src="image/ram3.jpg" alt="Ram_3">
+      <select id="R3">
+        <option value="0"></option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <p id="priceR3">$35.00</p>
+    <button onclick="ramCart3(); addTotalRam(ramCart(),ramCart2(),ramCart3(),ramCart4(),ramCart5())">Add to cart</button>
+  </div>
+
+  <div>
+    <img src="image/ram4.jpg" alt="Ram_4">
+      <select id="R4">
+        <option value="0"></option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <p id="priceR4">$90.00</p>
+    <button onclick="ramCart4(); addTotalRam(ramCart(),ramCart2(),ramCart3(),ramCart4(),ramCart5())">Add to cart</button>
+  </div>
+
+  <div>
+    <img src="image/ram5.jpg" alt="Ram_5">
+      <select id="R5">
+        <option value="0"></option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <p id="priceR5">$60.00</p>
+    <button onclick="ramCart5(); addTotalRam(ramCart(),ramCart2(),ramCart3(),ramCart4(),ramCart5())">Add to cart</button>
+  </div>
+
+  </div>
+  <div id="cart">
+    <p id="caseCart">Case:</p><br>
+    <p id="hddCart">HDD:</p><br>
+    <p id="ramCart">Ram:</p><br>
+    <p id="mbCart">Motherboard:</p><br>
+    <p id="totalCart">Total:</p>
+  </div>
+</div>
+</body>
+
+</html>

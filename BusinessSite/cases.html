@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Cases</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div id="wrap">
+    <div class="topNav">
+        <a href=index.html>Home</a>
+        <a  class="active" href="cases.html">Cases</a>
+        <a href="harddrive.html" >HDD/SDD</a> 
+        <a href="ram.html">Ram</a> 
+        <a href="motherboard.html">Motherboard</a>
+        <a href="about.html">About</a>
+        <a href="checkOutForm.html">Check Out</a>
+    </div>
+    <div id="grid-container">
+
+        <div></div>
+        <div></div>
+        <div></div>
+        
+        <div>
+        <img src="image/case1.jpg" alt="case1">
+            <select id="C1">
+                <option value="0"></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <p id="priceC1">$50.00</p>
+            <button  onclick="caseCart(); addTotal(caseCart(),caseCart2(),caseCart3(),caseCart4(),caseCart5())">Add to cart</button>
+        </div>
+        <div>
+        <img src="image/case2.jpg" alt="case2">
+            <select id="C2">
+                <option value="0"></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <p id="priceC2">$120.00</p>
+            <button onclick="caseCart2(); addTotal(caseCart(),caseCart2(),caseCart3(),caseCart4(),caseCart5())">Add to cart</button>
+        </div>
+        <div>
+        <img src="image/case3.jpg" alt="case3">
+            <select id="C3">
+                <option value="0"></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <p id="priceC3">$250.00</p>
+            <button  onclick="caseCart3(); addTotal(caseCart(),caseCart2(),caseCart3(),caseCart4(),caseCart5())">Add to cart</button>
+        </div>
+        <div>
+        <img src="image/case4.jpg" alt="case4">
+            <select id="C4">
+                <option value="0"></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <p id="priceC4">$90.00</p>
+            <button  onclick="caseCart4(); addTotal(caseCart(),caseCart2addTotal(caseCart(),caseCart2(),caseCart3(),caseCart4(),caseCart5())())">Add to cart</button>
+        </div>
+        <div>
+        <img src="image/case5.jpg" alt="case5">
+            <select id="C5">
+                <option value="0"></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <p id="priceC5">$200.00</p>
+            <button  onclick="caseCart5();addTotal(caseCart(),caseCart2(),caseCart3(),caseCart4(),caseCart5())">Add to cart</button>
+        </div>
+      </div>
+      <div id="cart">
+        <p id="caseCart">Case:</p><br>
+        <p id="hddCart">HDD:</p><br>
+        <p id="ramCart">Ram:</p><br>
+        <p id="mbCart">Motherboard:</p><br>
+        <p id="totalCart">Total:</p>
+    </div>
+</div>
+</body>
+
+</html>
